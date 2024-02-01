@@ -12,10 +12,4 @@ class FavoritesController < ApplicationController
     favorite.destroy
     redirect_back(fallback_location: root_path)
   end
-
-  private
-
-  def favorite_params
-    params.require(:favorite).params(:user_id)
-  end
 end
