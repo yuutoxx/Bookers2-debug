@@ -13,6 +13,9 @@
     <%= render 'layouts/header' %>
       <main class="md-auto">
         <p id="notice"><%= notice %></p>
+        <div class="d-flex justify-content-center md-2">
+          <%= render "searches/form" %>
+        </div>
       <%= yield %>
       </main>
     <%= render 'layouts/footer' %>
